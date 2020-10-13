@@ -34,6 +34,7 @@ class ResetPasswordController extends Controller
         $this->middleware('guest');
     }
 
+    //重写找回密码成功的回应，添加提示
     public function sendResetResponse(Request $request, $response)
     {
         session()->flash('success','密码更新成功，您已成功登录！');
