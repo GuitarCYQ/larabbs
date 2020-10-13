@@ -30,7 +30,7 @@ class UsersController extends Controller
 
             //ImageUploadHandler做了判断 如果文件后缀名不对 返回false;
             if ($result){
-                $data['avatar'] = $request['path'];
+                $data['avatar'] = $result['path'];
             }
         }
 
