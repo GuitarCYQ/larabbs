@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6be7114e7b3bce17ca880a8ad267e7c0",
+    "content-hash": "30740ab7d6ad86dd8d6c4beacdfb7025",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -4695,7 +4695,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "url": "https://mirrors.cloud.tencent.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -4896,7 +4896,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "url": "https://mirrors.cloud.tencent.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -4951,7 +4951,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "url": "https://mirrors.cloud.tencent.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -5018,7 +5018,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "url": "https://mirrors.cloud.tencent.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -5074,7 +5074,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "url": "https://mirrors.cloud.tencent.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -5188,7 +5188,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "url": "https://mirrors.cloud.tencent.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -5262,7 +5262,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "url": "https://mirrors.cloud.tencent.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -5316,7 +5316,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "url": "https://mirrors.cloud.tencent.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -5392,7 +5392,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "url": "https://mirrors.cloud.tencent.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -5453,7 +5453,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "url": "https://mirrors.cloud.tencent.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -5506,7 +5506,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "url": "https://mirrors.cloud.tencent.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -5739,7 +5739,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "url": "https://mirrors.cloud.tencent.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -5808,7 +5808,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "url": "https://mirrors.cloud.tencent.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -5864,7 +5864,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "url": "https://mirrors.cloud.tencent.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -5911,7 +5911,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "url": "https://mirrors.cloud.tencent.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -5966,7 +5966,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "url": "https://mirrors.cloud.tencent.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -6022,7 +6022,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "url": "https://mirrors.cloud.tencent.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -6111,7 +6111,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "url": "https://mirrors.cloud.tencent.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -6186,7 +6186,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "url": "https://mirrors.cloud.tencent.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -6237,7 +6237,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "url": "https://mirrors.cloud.tencent.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -6307,7 +6307,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "url": "https://mirrors.cloud.tencent.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -6369,7 +6369,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "url": "https://mirrors.cloud.tencent.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -6428,7 +6428,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "url": "https://mirrors.cloud.tencent.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -6501,7 +6501,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "url": "https://mirrors.cloud.tencent.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -6561,7 +6561,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "url": "https://mirrors.cloud.tencent.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -6614,7 +6614,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "url": "https://mirrors.cloud.tencent.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -6665,7 +6665,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "url": "https://mirrors.cloud.tencent.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -6724,7 +6724,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "url": "https://mirrors.cloud.tencent.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -6772,7 +6772,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "url": "https://mirrors.cloud.tencent.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -6824,7 +6824,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "url": "https://mirrors.cloud.tencent.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -6873,7 +6873,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "url": "https://mirrors.cloud.tencent.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -6919,7 +6919,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "url": "https://mirrors.cloud.tencent.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]

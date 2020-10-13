@@ -26,7 +26,7 @@ class UsersController extends Controller
         //处理了图片上传的逻辑
         if ($request->avatar){
             //调用ImageUploadHandler的save()方法
-            $result = $uploader->save($request->avatar, 'avatars', $user->id);
+            $result = $uploader->save($request->avatar, 'avatars', $user->id, 416);
 
             //ImageUploadHandler做了判断 如果文件后缀名不对 返回false;
             if ($result){
