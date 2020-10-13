@@ -18,7 +18,7 @@ class User extends Authenticatable implements MustVerifyEmailContract
     //4.获取发送邮件地址 提供这个接口允许你自定义邮件字段
 
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password','introduction'
     ];
 
     protected $hidden = [
