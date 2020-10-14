@@ -42,3 +42,4 @@ Route::resource('topics', 'TopicsController', ['only' => ['index', 'show', 'crea
 
 //分类列表
 Route::resource('categories','CategoriesController',['only' => ['show']]);
+
