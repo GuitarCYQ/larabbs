@@ -17139,3 +17139,7 @@ body {
   border-top: 1px solid #dcebf5;
 }
 
+#app > div.container {
+  margin-bottom: 100px;
+}
+
