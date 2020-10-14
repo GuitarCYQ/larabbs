@@ -14,10 +14,12 @@ class TopicsController extends Controller
         $this->middleware('auth', ['except' => ['index', 'show']]);
     }
 
-	public function index()
+	public function index(Request $request, Topic $topic)
 	{
 	    //使用Eloquent的预加载功能 with() 提前加载了我们后面要用到的关联属性user和category 并做了缓存 因此后面不必产生多余的SQL查询
-		$topics = Topic::with('user','category')->paginate(30);
+		$topics = $topic->withOrder($request->order)
+                        ->with('user','category')
+                        ->paginate(20);
 		return view('topics.index', compact('topics'));
 	}
 
