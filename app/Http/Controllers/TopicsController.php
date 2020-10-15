@@ -67,7 +67,8 @@ class TopicsController extends Controller
 		$this->authorize('destroy', $topic);
 		$topic->delete();
 
-		return redirect()->route('topics.index')->with('message', 'Deleted successfully.');
+		session()->flash('success','删除成功！');
+		return redirect()->route('topics.index');
 	}
 
     public function uploadImage(Request $request, ImageUploadHandler $uploader)
