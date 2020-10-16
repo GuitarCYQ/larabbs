@@ -9,7 +9,7 @@ class Topic extends Model
     ];
 
     //一篇帖子下有多条回复
-    public function relies()
+    public function replies()
     {
         return $this->hasMany(Reply::class);
     }
