@@ -19,7 +19,7 @@ class NotificationsController extends Controller
 
         //标记为已读，未读数量清空
         Auth::user()->markAsRead();
-        
+
         return view('notifications.index', compact('notifications'));
     }
 }

@@ -22,8 +22,8 @@ class RepliesController extends Controller
 	    $reply->topic_id = $request->topic_id;
 	    $reply->save();
 
-        session()->flash('success','评论创建成功！');
-        return redirect()->to($reply->topic->link());
+//        session()->flash('success','评论创建成功！');
+        return redirect()->to($reply->topic->link())->with('success', '评论创建成功！');;
 	}
 
 	public function destroy(Reply $reply)
