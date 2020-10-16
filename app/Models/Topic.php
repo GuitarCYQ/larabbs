@@ -48,6 +48,13 @@ class Topic extends Model
         return $query->orderBy('created_at','desc');
     }
 
+    //生成带有slug的地址
+    public function link($params = [])
+    {
+        //参数$params 允许附加URL参数的设定
+        return route('topics.show',array_merge([$this->id, $this->slug], $params));
+    }
+
 
 
 
