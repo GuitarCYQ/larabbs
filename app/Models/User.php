@@ -7,16 +7,20 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Auth\MustVerifyEmail as MustVerifyEmailTrait;
 use Illuminate\Support\Facades\Auth;
+use Spatie\Permission\Traits\HasRoles;
 
 class User extends Authenticatable implements MustVerifyEmailContract
 {
 
-    use  MustVerifyEmailTrait;
+    use MustVerifyEmailTrait;
     //使用MustVerifyEmailTrait 可以有
     //1.检查用户Email是否已经认证
     //2.见用户标示为已认证
     //3.发送Email认证的消息通知，触发邮件的发送
     //4.获取发送邮件地址 提供这个接口允许你自定义邮件字段
+
+    //HasRoles 获取到扩展包提供的所有权限和角色的操作方法
+    use HasRoles;
 
     //发送通知
     use Notifiable {
