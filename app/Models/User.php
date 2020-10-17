@@ -79,4 +79,30 @@ class User extends Authenticatable implements MustVerifyEmailContract
     {
         return $this->hasMany(Reply::class);
     }
+
+    //利用修改器修改 后台密码修改时没有加密的密码 进行加密
+    public function setPasswordAttribute($value)
+    {
+        //如果值的长度等于60，即认为是已经做过加密的情况
+        if (strlen($value) != 60){
+
+            //不等于60，做密码加密处理
+            $value = bcrypt($value);
+        }
+
+        $this->attributes['password'] = $value;
+    }
+
+    //修改 后台修改头像的上传地址
+    public function setAvatarAttribute($path)
+    {
+        //如果不是‘http’ 子串开头，那就时从后台上传的，需要补全URL
+        if ( ! \Str::startsWith($path, 'http')){
+
+            //拼接完整的URL
+            $path = config('app.url') . "/uploads/images/avatars/$path";
+        }
+
+        $this->attributes['avatar'] = $path;
+    }
 }
