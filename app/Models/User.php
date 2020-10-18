@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Models\Traits\ActiveUserHelper;
 use Illuminate\Contracts\Auth\MustVerifyEmail as MustVerifyEmailContract;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
@@ -21,6 +22,9 @@ class User extends Authenticatable implements MustVerifyEmailContract
 
     //HasRoles 获取到扩展包提供的所有权限和角色的操作方法
     use HasRoles;
+
+    //调用计算活跃用户的Helper
+    use Traits\ActiveUserHelper;
 
     //发送通知
     use Notifiable {
