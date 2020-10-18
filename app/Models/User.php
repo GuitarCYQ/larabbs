@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use App\Models\Traits\ActiveUserHelper;
+use App\Models\Traits\LastActivedAtHelper;
 use Illuminate\Contracts\Auth\MustVerifyEmail as MustVerifyEmailContract;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
@@ -12,6 +13,8 @@ use Spatie\Permission\Traits\HasRoles;
 
 class User extends Authenticatable implements MustVerifyEmailContract
 {
+
+    //获取用户的最后登录时间
 
     use MustVerifyEmailTrait;
     //使用MustVerifyEmailTrait 可以有
@@ -25,6 +28,9 @@ class User extends Authenticatable implements MustVerifyEmailContract
 
     //调用计算活跃用户的Helper
     use Traits\ActiveUserHelper;
+
+    //获取用户最后的登录时间
+    use Traits\LastActivedAtHelper;
 
     //发送通知
     use Notifiable {
