@@ -18,10 +18,10 @@ class UsersController extends Controller
             abort(403, '验证码已失效');
         }
 
-//        if (!hash_equals($verifyData['code'], $request->verification_code)) {
-//            // 返回401
-//            throw new AuthenticationException('验证码错误');
-//        }
+        if (!hash_equals($verifyData['code'], $request->verification_code)) {
+            // 返回401
+            throw new AuthenticationException('验证码错误');
+        }
 
         $user = User::create([
             'name' => $request->name,
