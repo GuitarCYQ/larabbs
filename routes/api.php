@@ -68,6 +68,10 @@ Route::prefix('v1')->namespace('Api')->name('api.v1.')->group(function (){
             Route::get('categories', 'CategoriesController@index')
                 ->name('categories.index');
 
+            //某个用户发布的话题
+            Route::get('users/{user}/topics', 'TopicsController@userIndex')
+                ->name('users.topics.index');
+
             // 登录后可以访问的接口
             Route::middleware('auth:api')->group(function() {
                 // 当前登录用户信息
