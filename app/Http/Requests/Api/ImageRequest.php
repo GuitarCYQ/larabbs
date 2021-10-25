@@ -23,14 +23,15 @@ class ImageRequest extends FormRequest
      */
     public function rules()
     {
+
         $rules = [
-            'type'  =>  'required|string|in:avatar,topic',
+            'type' => 'required|string|in:avatar,topic',
         ];
 
-        if ($this->type == 'avatar'){
-            $rules['image'] = 'required|mines:jpeg,bmp,png,gif|dimensions:min_width=200,min_height=200';
+        if ($this->type == 'avatar') {
+            $rules['image'] = 'required|mimes:jpg,webp,jpeg,bmp,png,gif|dimensions:min_width=200,min_height=200';
         } else {
-            $rules['image'] = 'required|mines:jpeg,bmp,png,gif';
+            $rules['image'] = 'required|mimes:jpg,webp,jpeg,bmp,png,gif';
         }
 
         return $rules;
@@ -39,7 +40,7 @@ class ImageRequest extends FormRequest
     public function messages()
     {
         return [
-            'image.dimensions'  =>  '图片的清晰度不够，宽和高需要 200px 以上',
+            'image.dimensions' => '图片的清晰度不够，宽和高需要 200px 以上',
         ];
     }
 }
