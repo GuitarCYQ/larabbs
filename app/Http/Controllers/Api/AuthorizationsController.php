@@ -2,22 +2,19 @@
 
 namespace App\Http\Controllers\Api;
 
-use App\Http\Requests\Api\AuthorizationRequest;
 use App\Models\User;
 use Illuminate\Support\Arr;
 use Illuminate\Http\Request;
 use Illuminate\Auth\AuthenticationException;
+use App\Http\Requests\Api\AuthorizationRequest;
 use App\Http\Requests\Api\SocialAuthorizationRequest;
 
 class AuthorizationsController extends Controller
 {
-
-
     public function store(AuthorizationRequest $request)
     {
         $username = $request->username;
 
-        //过滤值，判断email和phone都可以登录
         filter_var($username, FILTER_VALIDATE_EMAIL) ?
             $credentials['email'] = $username :
             $credentials['phone'] = $username;
@@ -36,12 +33,12 @@ class AuthorizationsController extends Controller
         $driver = \Socialite::create($type);
 
         try {
-            if ($code = $request->code){
+            if ($code = $request->code) {
                 $oauthUser = $driver->userFromCode($code);
             } else {
                 $tokenData['access_token'] = $request->access_token;
 
-                //微信需要增加openid
+                // 微信需要增加 openid
                 if ($type == 'wechat') {
                     $driver->withOpenid($request->openid);
                 }
@@ -52,7 +49,7 @@ class AuthorizationsController extends Controller
             throw new AuthenticationException('参数错误，未获取用户信息');
         }
 
-        if (!$oauthUser->getId()){
+        if (!$oauthUser->getId()) {
             throw new AuthenticationException('参数错误，未获取用户信息');
         }
 
@@ -69,10 +66,10 @@ class AuthorizationsController extends Controller
                 // 没有用户，默认创建一个用户
                 if (!$user) {
                     $user = User::create([
-                        'name'  =>  $oauthUser->getNickname(),
-                        'avatar'    =>  $oauthUser->getAvatar(),
-                        'weixin_openid' =>  $oauthUser->getId(),
-                        'weixin_unionid'    => $unionid,
+                        'name' => $oauthUser->getNickname(),
+                        'avatar' => $oauthUser->getAvatar(),
+                        'weixin_openid' => $oauthUser->getId(),
+                        'weixin_unionid' => $unionid,
                     ]);
                 }
 
@@ -80,6 +77,15 @@ class AuthorizationsController extends Controller
         }
         $token = auth('api')->login($user);
         return $this->respondWithToken($token)->setStatusCode(201);
+    }
+
+    protected function respondWithToken($token)
+    {
+        return response()->json([
+            'access_token' => $token,
+            'token_type' => 'Bearer',
+            'expires_in' => auth('api')->factory()->getTTL() * 60
+        ]);
     }
 
     public function update()
@@ -91,16 +97,6 @@ class AuthorizationsController extends Controller
     public function destroy()
     {
         auth('api')->logout();
-        return response(null,204);
-    }
-
-
-    protected function respondWithToken($token)
-    {
-        return response()->json([
-            'access_token'  =>  $token,
-            'token_type'    =>  'Bearer',
-            'expires_in'    =>  \Auth::guard('api')->factory()->getTTL() * 60
-        ]);
+        return response(null, 204);
     }
 }

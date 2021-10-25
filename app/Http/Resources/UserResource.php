@@ -10,16 +10,16 @@ class UserResource extends JsonResource
 
     public function toArray($request)
     {
-        if (!$this->showSensitiveFields) {
-            $this->resource->makeHidden(['phone', 'email']);
-        }
+       if (!$this->showSensitiveFields) {
+           $this->resource->makeHidden(['phone', 'email']);
+       }
 
-        $data = parent::toArray($request);
+       $data = parent::toArray($request);
 
-        $data['bound_phone'] = $this->resource->phone ? true : false;
-        $data['bound_wechat'] = ($this->resource->weixin_unionid || $this->resource->weixin_openid) ? true : false;
+       $data['bound_phone'] = $this->resource->phone ? true : false;
+       $data['bound_wechat'] = ($this->resource->weixin_unionid || $this->resource->weixin_openid) ? true : false;
 
-        return $data;
+       return $data;
     }
 
     public function showSensitiveFields()
