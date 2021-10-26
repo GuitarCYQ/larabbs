@@ -60,6 +60,14 @@ Route::prefix('v1')->namespace('Api')->name('api.v1.')->group(function (){
                 'index', 'show'
             ]);
 
+            //话题回复列表
+            Route::get('topics/{topic}/replies', 'RepliesController@index')
+                ->name('topics.replies.index');
+
+            //某个用户的回复列表
+            Route::get('users/{user}/replies', 'RepliesController@userIndex')
+                ->name('users.replies.index');
+
             // 某个用户的详情
             Route::get('users/{user}', 'UsersController@show')
                 ->name('users.show');
