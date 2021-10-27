@@ -9,9 +9,8 @@ use Illuminate\Notifications\Notifiable;
 use Illuminate\Auth\MustVerifyEmail as MustVerifyEmailTrait;
 use Auth;
 use Spatie\Permission\Traits\HasRoles;
-use Tymon\JWTAuth\Contracts\JWTSubject;
 
-class User extends Authenticatable implements MustVerifyEmailContract, JWTSubject
+class User extends Authenticatable implements MustVerifyEmailContract
 {
     use Traits\ActiveUserHelper;
     use Traits\LastActivedAtHelper;
@@ -44,7 +43,8 @@ class User extends Authenticatable implements MustVerifyEmailContract, JWTSubjec
         'introduction',
         'avatar',
         'weixin_openid',
-        'weixin_unionid'
+        'weixin_unionid',
+        'registration_id'
     ];
 
     protected $hidden = [
@@ -104,16 +104,6 @@ class User extends Authenticatable implements MustVerifyEmailContract, JWTSubjec
         $this->attributes['avatar'] = $path;
     }
 
-    //返回User的id
-    public function getJWTIdentifier()
-    {
-        return $this->getKey();
-    }
 
-    //在JWT荷载中增加的自定义内容
-    public function getJWTCustomClaims()
-    {
-        return [];
-    }
 
 }
